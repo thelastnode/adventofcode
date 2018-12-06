@@ -4,15 +4,6 @@ from itertools import product
 from typing import List, Tuple, NamedTuple, Dict
 
 
-class GridState(NamedTuple):
-    origin: str
-    distance: int
-
-class QueueItem(NamedTuple):
-    origin: str
-    distance: int
-    coord: Tuple[int]
-
 MAX_VAL = 10_000
 
 def distance(c1, c2) -> int:
